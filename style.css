@@ -1,0 +1,137 @@
+
+
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+        
+      
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.inface{
+    max-width: 1280;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 8px 35px;
+    font-size: 40px;
+    font-weight: 200;
+    background-color: #BF914B;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+/*cabeçalho*/
+header{
+    padding: 25px 4%;
+}
+
+header > .inface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+header a{
+    color: rgb(148, 147, 147);
+    text-decoration: none;
+    display: inline-block;
+    transition: 2s;
+}
+
+header a:hover{
+    color: #BF914B;
+    transform: scale(1.10);
+}
+
+header nav ul{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 15px #976f32;
+}
+
+/*topo de site*/
+
+section.topo-do-site{
+    padding: 20px 4%;
+    
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: auto;
+}
+
+.topo-do-site h1{
+    color: #BF914B;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #cab492;
+    font-size: 30px;
+    margin: 40px 0;
+    
+}
+
+.topo-do-site .txt-topo-site{
+    display: flex;
+    flex-direction: column; /* Para alinhar verticalmente */
+    justify-content: center;
+    gap: 0px;
+    height: 10vh;
+}
+.topo-do-site .txt-topo-site{
+    height: 600px;
+}
+
+section.topo-do-site .img-topo-site{
+    position: relative;
+    top: 40px;
+    left: -20px;
+}
+
+section.topo-do-site .img-topo-site img{
+    position: relative;
+    animation-delay: 1s;
+    animation: flutuar 2s linear infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+    
+}
